@@ -1,0 +1,60 @@
+{
+    "name": "enpcript",
+    "version": "0.0.1",
+    "description": "A npm package for encrypting and decrypting files and strings",
+    "license": "MIT",
+    "author": {
+        "name": "BRAVO68WEB",
+        "email": "hi@b68.dev"
+    },
+    "type": "module",
+    "main": "dist/lib/script.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc -w",
+        "format": "prettier --write .",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "local-test": "node dist/test/hey.js",
+        "local-test:debug": "DEBUG_MODE=true node dist/test/hey.js",
+        "test": "mocha dist/test/*.js",
+        "postinstall": "npm run build"
+    },
+    "dependencies": {
+        "@types/shelljs": "^0.8.12",
+        "mocha": "^10.2.0",
+        "shelljs": "^0.8.5"
+    },
+    "devDependencies": {
+        "@bravo68web/eslint-config": "^1.1.0",
+        "@bravo68web/prettier-config": "^1.1.0",
+        "@bravo68web/tsconfig": "^1.1.0",
+        "@esbuild-kit/esm-loader": "^2.5.5",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^20.3.2",
+        "eslint": "^8.43.0",
+        "prettier": "^2.8.8",
+        "typescript": "^5.1.6"
+    },
+    "keywords": [
+      "shelljs",
+      "crypto",
+      "encrypt",
+      "decrypt",
+      "sign",
+      "verify"
+    ],
+    "prettier": "@bravo68web/prettier-config",
+    "preview": true,
+    "files": [
+      "dist"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/BRAVO68WEB/enp-crypt.git"
+    },
+    "bugs": {
+      "url": "https://github.com/BRAVO68WEB/enp-crypt/issues"
+    },
+    "homepage": "https://github.com/BRAVO68WEB/enp-crypt#readme"
+}

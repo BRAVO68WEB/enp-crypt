@@ -1,0 +1,6 @@
+dist/
+node_modules/
+
+keys/*.key
+keys/*.pub
+keys/*.sig
